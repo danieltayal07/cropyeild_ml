@@ -1,67 +1,54 @@
-# 📊 Customer Churn Prediction & Agentic Retention Strategy
+# 🌾 Intelligent Crop Yield Prediction & Agentic Farm Advisory
 
-> From Predictive Analytics to Intelligent Intervention
+> From Agricultural Analytics to Autonomous Farming Advice
 
 ## 📖 Project Overview
-This project involves the design and implementation of an **AI-driven customer analytics system**. The application is built in two distinct phases: it first predicts customer churn using historical data, and then evolves into an agentic AI retention strategist that recommends actionable interventions.
+This project involves the design and implementation of an AI-driven agricultural analytics system that predicts crop yield and evolves into an agentic AI farm advisory assistant. In Milestone 1, the system applies classical machine learning techniques to historical crop, soil, and weather data to predict yield and identify productivity factors.
 
 ### 🎯 Project Milestones
-* **Milestone 1 (Mid-Sem):** Classical machine learning techniques are applied to historical customer behavior data to predict churn risk and identify key drivers of disengagement.
-* **Milestone 2 (End-Sem):** The system is extended into an agent-based AI application that autonomously reasons about churn risk, retrieves retention best practices via RAG, and plans intervention strategies.
+* **Milestone 1 (Mid-Sem):** Design and implement a machine learning-based crop yield prediction system using historical agricultural, soil, and weather data. The focus is on classical ML workflows without LLMs.
 
 ---
 
-## 🏗 System Architecture
+## 🏗 System Architecture & Flow
 
-
-* **Phase 1 (Predictive Analytics):** Focuses on classical ML pipelines, feature engineering, and predictive modeling without the use of LLMs.
-* **Phase 2 (Agentic Strategist):** Built using LangGraph, this phase involves state and node management, querying vector databases for retrieval-augmented generation (RAG), and using LLMs to format structured recommendations.
+* **Inputs:** Farm data CSV containing crop, soil, and weather data. Features include Rainfall, Soil type, Fertilizer, and pH.
+* **Preprocessing:** Handles missing values, feature scaling, and encoding.
+* **Outputs:** Predicts crop yield or yield category. Displays predictions through a user interface and provides feature importance analysis.
 
 ---
 
-## 💻 Technology Stack
+## 💻 Technology Stack & Requirements
 
-| Component | Technology |
+| Component | Technology / Metric |
 | :--- | :--- |
-| **ML Models (M1)** | Logistic Regression, Decision Trees, Scikit-Learn |
-| **Agent Framework (M2)** | LangGraph, Chroma/FAISS (RAG) |
-| **UI Framework** | Streamlit or Gradio |
-| **LLMs (M2)** | Open-source models or Free-tier APIs |
+| **ML Models** | Linear Regression, Decision Trees |
+| **Evaluation Metrics** | MAE, RMSE, R-squared (Regression metrics) |
+| **UI Framework** | Streamlit or Gradio (for local and hosted app) |
+| **Deployment** | Accessible via a public URL |
 
 ---
 
 ## 🚀 Deliverables & Features
 
-### Milestone 1: ML-Based Churn Prediction
-* **Objective:** Identify customers at risk using historical behavioral data.
+### Milestone 1: ML-Based Crop Yield Prediction
+* **Objective:** Predict crop yield or yield category strictly using Traditional ML and Deep Learning; Agentic AI or GenAI-based methods are not used for this phase.
 * **Key Outputs:**
-    * Documentation of problem understanding and business context.
+    * Problem understanding & Agro-context.
+    * Input–output specification.
     * System architecture diagram.
-    * Working local application with a Streamlit or Gradio UI.
-    * Model performance evaluation report detailing metrics like Accuracy and F1 score.
-
-### Milestone 2: Agentic AI Retention Assistant
-* **Objective:** Extend the system to reason about risk, retrieve best practices, and generate structured recommendations.
-* **Key Outputs:**
-    * Publicly deployed application with a shared link.
-    * Agent workflow documentation detailing States & Nodes.
-    * Structured retention report generation.
-    * Complete codebase hosted in this GitHub Repository.
-    * A demonstration video (Max 5 mins).
+    * Working local application with UI.
+    * Model performance evaluation report.
 
 ---
 
 ## ⚙️ Installation & Usage
 
-### Prerequisites
-* Python 3.8+
-* Git
-
 ### Setup Instructions
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone [https://github.com/sanath-2512/cropyeild_ml](https://github.com/sanath-2512/cropyeild_ml)
+    cd cropyeild_ml
     ```
 2.  **Install dependencies:**
     ```bash
@@ -69,26 +56,28 @@ This project involves the design and implementation of an **AI-driven customer a
     ```
 3.  **Run the application locally:**
     ```bash
+    # Replace app.py with your main script name if using a different file
     streamlit run app.py
     # or python app.py if using Gradio
     ```
 
 ---
 
-## 🌐 Deployment
-> **⚠️ WARNING:** Localhost-only demonstrations will **not** be accepted for final submission. The project must be hosted.
+## 🌐 Deployment & Live Demo
+The application has been successfully deployed and is accessible via a public URL. It is designed to work as intended during the demo with no crashes or timeouts under normal use.
 
-The final application must be publicly accessible. Supported hosting platforms include:
-* Hugging Face Spaces
-* Streamlit Cloud
-* Render
+* **Live Project Link:** [https://cropyield-pahp.onrender.com/](https://cropyield-pahp.onrender.com/)
 
 ---
 
-## 👥 Project Guidelines & Constraints
-* **Team Size:** 3–4 Students.
-* **API Budget:** Strictly Free Tier Only (utilizing Open-source models and Free APIs).
-
 ## 📈 Evaluation Criteria
-* **Mid-Sem (25%):** Evaluated on ML technique application, Feature Engineering, UI Usability, and Evaluation Metrics.
-* **End-Sem (30%):** Evaluated on Reasoning quality, RAG & State management implementation, Output clarity, and Deployment success.
+
+The project is evaluated on the following components:
+
+| Component | Weight | Criteria |
+| :--- | :--- | :--- |
+| **Technical Implementation** | 0.30 | Correctness, Completeness, Depth & Complexity, Design Choices, and Performance. |
+| **GitHub Repository & Code Quality** | 0.15 | Readability, Structure, History (meaningful commits), and Documentation (README.md). |
+| **Project Report (LaTeX)** | 0.15 | Logical flow, clear technical explanations, inclusion of figures/results/citations, and professional LaTeX typesetting. |
+| **Hosted Link / Live Demo** | 0.10 | Accessible via public URL, functionality, stability, and intuitive interface. |
+| **Project Video (5 MINS)** | 0.10 | Clear problem statement, walkthrough of the working system, and good production quality. |
