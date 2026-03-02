@@ -1,83 +1,77 @@
-# 🌾 Intelligent Crop Yield Prediction & Agentic Farm Advisory
+# 🌾 Intelligent Crop Yield Prediction & Farm Advisory
 
-> From Agricultural Analytics to Autonomous Farming Advice
+> A comprehensive machine learning toolkit for predicting agricultural productivity using historical crop, soil, and weather data. 
 
-## 📖 Project Overview
-This project involves the design and implementation of an AI-driven agricultural analytics system that predicts crop yield and evolves into an agentic AI farm advisory assistant. In Milestone 1, the system applies classical machine learning techniques to historical crop, soil, and weather data to predict yield and identify productivity factors.
+## Table of Contents
 
-### 🎯 Project Milestones
-* **Milestone 1 (Mid-Sem):** Design and implement a machine learning-based crop yield prediction system using historical agricultural, soil, and weather data. The focus is on classical ML workflows without LLMs.
+- [Overview](#overview)
+- [Live Demo](#live-demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Methodology](#methodology)
+- [Limitations](#limitations)
+- [Contributing](#contributing)
+- [License](#license)
 
----
+## Overview
 
-## 🏗 System Architecture & Flow
+This project serves as **Milestone-1** in developing an AI-driven agricultural analytics system. It focuses exclusively on traditional Machine Learning pipelines to predict crop yields and identify key productivity factors without relying on Large Language Models (LLMs) or Agentic AI. 
 
-* **Inputs:** Farm data CSV containing crop, soil, and weather data. Features include Rainfall, Soil type, Fertilizer, and pH.
-* **Preprocessing:** Handles missing values, feature scaling, and encoding.
-* **Outputs:** Predicts crop yield or yield category. Displays predictions through a user interface and provides feature importance analysis.
+By analyzing critical inputs like rainfall, soil type, and fertilizer usage, this classical ML approach provides a robust, interpretable baseline. This foundation motivates the transition toward an autonomous, agent-based farm advisory system in future milestones.
 
----
+## Live Demo
 
-## 💻 Technology Stack & Requirements
+* **Deployed Web Application:** [Crop Yield Predictor on Render](https://cropyield-pahp.onrender.com/)
+* **GitHub Repository:** [sanath-2512/cropyeild_ml](https://github.com/sanath-2512/cropyeild_ml)
 
-| Component | Technology / Metric |
-| :--- | :--- |
-| **ML Models** | Linear Regression, Decision Trees |
-| **Evaluation Metrics** | MAE, RMSE, R-squared (Regression metrics) |
-| **UI Framework** | Streamlit or Gradio (for local and hosted app) |
-| **Deployment** | Accessible via a public URL |
+## Features
 
----
+### Core Capabilities
 
-## 🚀 Deliverables & Features
+- **Data Processing**: Accepts and processes raw agricultural CSV data (Soil, Weather, Crop).
+- **Automated Preprocessing**: Handles missing values, performs feature scaling (Standardization/Normalization), and applies categorical encoding (One-Hot/Label Encoding).
+- **Yield Prediction**: Generates numerical or categorical crop yield predictions based on environmental inputs.
+- **Feature Importance**: Analyzes and extracts the most significant factors driving crop growth (e.g., pH, Rainfall).
+- **Evaluation Metrics**: Calculates and displays Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared ($R^2$) scores.
 
-### Milestone 1: ML-Based Crop Yield Prediction
-* **Objective:** Predict crop yield or yield category strictly using Traditional ML and Deep Learning; Agentic AI or GenAI-based methods are not used for this phase.
-* **Key Outputs:**
-    * Problem understanding & Agro-context.
-    * Input–output specification.
-    * System architecture diagram.
-    * Working local application with UI.
-    * Model performance evaluation report.
+### Interactive Web Interface
 
----
+Built with Streamlit/Gradio, the interface provides:
+- Simple input forms for farmers or agricultural analysts to enter soil and weather parameters.
+- Real-time yield predictions based on the trained models.
+- Visual breakdowns of which features impacted the prediction the most.
+- Clean, intuitive, and accessible UI design.
 
-## ⚙️ Installation & Usage
+## Tech Stack
 
-### Setup Instructions
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/sanath-2512/cropyeild_ml](https://github.com/sanath-2512/cropyeild_ml)
-    cd cropyeild_ml
-    ```
-2.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  **Run the application locally:**
-    ```bash
-    # Replace app.py with your main script name if using a different file
-    streamlit run app.py
-    # or python app.py if using Gradio
-    ```
+### Core Libraries
 
----
+- **Python 3.8+**: Primary programming language
+- **Streamlit / Gradio**: Web application and UI framework
+- **scikit-learn**: Machine learning algorithms and preprocessing utilities
+- **pandas**: Data manipulation, cleaning, and CSV parsing
+- **numpy**: Numerical computations and matrix operations
 
-## 🌐 Deployment & Live Demo
-The application has been successfully deployed and is accessible via a public URL. It is designed to work as intended during the demo with no crashes or timeouts under normal use.
+### Supporting Libraries
 
-* **Live Project Link:** [https://cropyield-pahp.onrender.com/](https://cropyield-pahp.onrender.com/)
+- **matplotlib / seaborn**: Plotting and data visualization (Feature importance charts)
+- **joblib / pickle**: Model saving and loading
 
----
+## Installation
 
-## 📈 Evaluation Criteria
+### Prerequisites
 
-The project is evaluated on the following components:
+- Python 3.8 or higher
+- pip package manager
+- Git
 
-| Component | Weight | Criteria |
-| :--- | :--- | :--- |
-| **Technical Implementation** | 0.30 | Correctness, Completeness, Depth & Complexity, Design Choices, and Performance. |
-| **GitHub Repository & Code Quality** | 0.15 | Readability, Structure, History (meaningful commits), and Documentation (README.md). |
-| **Project Report (LaTeX)** | 0.15 | Logical flow, clear technical explanations, inclusion of figures/results/citations, and professional LaTeX typesetting. |
-| **Hosted Link / Live Demo** | 0.10 | Accessible via public URL, functionality, stability, and intuitive interface. |
-| **Project Video (5 MINS)** | 0.10 | Clear problem statement, walkthrough of the working system, and good production quality. |
+### Setup Steps
+
+1. **Clone the repository**
+
+```bash
+git clone [https://github.com/sanath-2512/cropyeild_ml.git](https://github.com/sanath-2512/cropyeild_ml.git)
+cd cropyeild_ml
