@@ -100,13 +100,8 @@ The application will automatically open in your web browser at http://localhost:
 
 ## 📂 Project Structure
 
-cropyeild_ml/
-│
-├── app.py                      # Main web application script
-├── requirements.txt            # Python dependencies
-├── README.md                   # Project documentation
-├── Model.pkl
-├── Scaler.pkl
+<img width="185" height="210" alt="Screenshot 2026-03-02 at 3 51 20 PM" src="https://github.com/user-attachments/assets/01d48778-dbab-4523-b420-74588bf60949" />
+<img width="185" height="210" alt="Screenshot 2026-03-02 at 3 51 20 PM" src="https://github.com/user-attachments/assets/01d48778-dbab-4523-b420-74588bf60949" />
 
 ## ⚠️ Limitations & Next Steps (Milestone 2)
 
