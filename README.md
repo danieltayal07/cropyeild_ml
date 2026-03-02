@@ -75,3 +75,59 @@ Built with Streamlit/Gradio, the interface provides:
 ```bash
 git clone [https://github.com/sanath-2512/cropyeild_ml.git](https://github.com/sanath-2512/cropyeild_ml.git)
 cd cropyeild_ml
+```
+
+2. **Set up a virtual environment (Recommended):**
+
+```python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+3. **Install dependencies:**
+
+```
+pip install -r requirements.txt
+```
+
+4. **Run the application locally:**
+
+```
+streamlit run app.py
+```
+
+The application will automatically open in your web browser at http://localhost:8501
+
+
+## 📂 Project Structure
+
+cropyeild_ml/
+│
+├── app.py                      # Main web application script
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project documentation
+├── Model.pkl
+├── Scaler.pkl
+
+## ⚠️ Limitations & Next Steps (Milestone 2)
+
+While highly accurate on historical data, this Milestone 1 implementation has classical ML constraints:
+
+Static Nature: It cannot adapt to real-time, unstructured data like sudden weather alerts or agricultural news.
+
+Lack of Reasoning: It provides a prediction number but cannot autonomously generate a structured, strategic farming plan.
+
+Upcoming in Milestone 2: The system will be upgraded into an Agentic AI Retention Assistant using frameworks like LangGraph. It will autonomously reason about yield risks, retrieve farming best practices via RAG, and generate structured, actionable advice for farmers.
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the issues page. If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+## 📝 License
+
+This project is for academic and research purposes as part of the Intelligent Crop Yield Prediction coursework.
+
+
+
+  
